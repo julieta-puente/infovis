@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js"></script>
+    <script src="stackedAreaChart.js" charset="utf-8"></script>
+    <script src="focus.js" charset="utf-8"></script>
+    <script src="interactiveLayer.js" charset="utf-8"></script>
+    <script src="tooltip.js" charset="utf-8"></script>
+    <script src="utils.js" charset="utf-8"></script>
+    <script src="commits.js" charset="utf-8"></script>
+
+    <style>
+        text {
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+        }
+        html, body, svg {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <title>Commits en github</title>
+</head>
+<body class='with-3d-shadow with-transitions'>
+<div class="jumbotron">
+    <div class="container">
+        <h2 align="center">Trabajo de datos personales</h2>
+        <h3 align="center">Julieta Puente</h3>
+        <h2 align="center">
+            <img src="MercadoLibre.png" alt="" style="width:50px;height:50px;">
+            <img src="GitHub.png" alt="" style="width:50px;height:50px;">
+        </h2>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <h2>Commits en github</h2>
+        <p>Se registró la cantidad de commits a lo largo de un año en los distintos repositorios de Mercado Libre</p>
+    </div>
+    <svg id="chart1" style="height:600px"></svg>
+</div>
+</body>
+</html>
